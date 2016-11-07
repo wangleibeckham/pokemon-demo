@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 7a60c2a723e074c0fb9c118974e4ae42
+timeCreated: 1474584201
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: __hair_dum
+    100002: Camera
+    100004: Camera.target
+    100006: Camera_1
+    100008: Camera_1.target
+    100010: Cylin
+    100012: Cylinder
+    100014: Hair
+    100016: Hair1
+    100018: //RootNode
+    100020: HyperNURBS
+    100022: Landscape
+    100024: Lensflare_
+    100026: Light
+    100028: Metaball
+    100030: Moon
+    100032: Moon_Light
+    100034: Shadow_Pla
+    100036: Sky
+    100038: Sky_Dome
+    100040: Sky_Null
+    100042: Sun
+    100044: Sun_light
+    100046: TooBig0
+    100048: TooBig1
+    400000: __hair_dum
+    400002: Camera
+    400004: Camera.target
+    400006: Camera_1
+    400008: Camera_1.target
+    400010: Cylin
+    400012: Cylinder
+    400014: Hair
+    400016: Hair1
+    400018: //RootNode
+    400020: HyperNURBS
+    400022: Landscape
+    400024: Lensflare_
+    400026: Light
+    400028: Metaball
+    400030: Moon
+    400032: Moon_Light
+    400034: Shadow_Pla
+    400036: Sky
+    400038: Sky_Dome
+    400040: Sky_Null
+    400042: Sun
+    400044: Sun_light
+    400046: TooBig0
+    400048: TooBig1
+    2300000: __hair_dum
+    2300002: Cylin
+    2300004: Cylinder
+    2300006: Hair
+    2300008: Hair1
+    2300010: HyperNURBS
+    2300012: Landscape
+    2300014: Metaball
+    2300016: Moon
+    2300018: Shadow_Pla
+    2300020: Sky
+    2300022: Sky_Null
+    2300024: Sun
+    2300026: TooBig0
+    2300028: TooBig1
+    3300000: __hair_dum
+    3300002: Cylin
+    3300004: Cylinder
+    3300006: Hair
+    3300008: Hair1
+    3300010: HyperNURBS
+    3300012: Landscape
+    3300014: Metaball
+    3300016: Moon
+    3300018: Shadow_Pla
+    3300020: Sky
+    3300022: Sky_Null
+    3300024: Sun
+    3300026: TooBig0
+    3300028: TooBig1
+    4300000: Sky
+    4300002: Sky_Null
+    4300004: Sun
+    4300006: Moon
+    4300008: Shadow_Pla
+    4300010: Hair
+    4300012: __hair_dum
+    4300014: Hair1
+    4300016: Metaball
+    4300018: TooBig0
+    4300020: HyperNURBS
+    4300022: Cylinder
+    4300024: Cylin
+    4300026: Landscape
+    4300028: TooBig1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
