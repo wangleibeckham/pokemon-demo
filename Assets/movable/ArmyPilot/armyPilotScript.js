@@ -13,6 +13,7 @@ function Start () {
 	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
 	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
 	anim = GetComponent.<Animator>();
+
 }
 
 function Update () {
@@ -22,14 +23,25 @@ function Update () {
 	pilotX = GameObject.Find("ArmyPilot").transform.position.x;
 	pilotZ = GameObject.Find("ArmyPilot").transform.position.z;
 	Debug.Log(parseInt(posX)+" : "+parseInt(posZ));
-	if(parseInt(posX)<=18 && parseInt(posX)>=16){
+	anim.SetBool("idle",true);
+	if(parseInt(posX)<=20 && parseInt(posX)>=14)
+		{
 		if(parseInt(posZ)<=8 &&parseInt(posZ)>=6){
-		Debug.Log("Fire!");
-		anim.SetBool("approach",true);
+			Debug.Log("Fire!");
+			anim.SetBool("idle",false);
+			anim.SetBool("approach",true);
 		}
-	}
-	else{
-		Debug.Log("hold!");
-		anim.SetBool("approach",false);
-	}
+		else{
+			Debug.Log("Cease Fire!");
+			anim.SetBool("approach",false);
+			anim.SetBool("idle",true);
+		}
+
+}
+else{
+	
+			anim.SetBool("approach",false);
+			anim.SetBool("idle",true);
+		}
+
 }

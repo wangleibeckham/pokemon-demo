@@ -13,26 +13,16 @@ var spiderTransform;
 
 function Start () {
 
-//	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
-//	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
-//	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
-//	ctrlX = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.x;
-//	ctrlY = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.y;
-//	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
+	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
+	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
+	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
+	ctrlX = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.x;
+	ctrlY = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.y;
+	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
 	anim = GetComponent.<Animator>();
 	spiderX = GameObject.Find("spider").transform.position.x;
 	spiderZ = GameObject.Find("spider").transform.position.z;
-	anim.SetBool("spiderIdle",true);
 
-
-
-
-//	for (var i : int = 0; i > 4; i++){
-		
-//		Debug.Log("Running");
-		
-
-//	}
 
 
 }
@@ -48,12 +38,19 @@ function Update () {
 	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
 	spiderX = GameObject.Find("spider").transform.position.x;
 	spiderZ = GameObject.Find("spider").transform.position.z;
-	anim.SetBool("idle",false);
-	if(parseInt(posZ)==parseInt(spiderZ) && parseInt(posX)==parseInt(spiderX+1) ){
-		anim.SetBool("spiderAttack",true);
+	anim.SetBool("spiderIdle",true);
+	//Debug.Log(parseInt(posZ)+" : "+parseInt(posX)+"Spider: "+parseInt(spiderZ)+" : "+parseInt(spiderX)+"");
+	if(parseInt(posZ)<=parseInt(spiderZ)+3 && parseInt(posZ)>=parseInt(spiderZ)-3){
+		Debug.Log('Z match');
+ 		if (parseInt(posX)>=23 &&parseInt(posX)<=26){
+ 			Debug.Log('right X pos');
+			anim.SetBool("spiderAttack",true);
+		}
+		else{
+		Debug.Log('leave battle');
+			anim.SetBool("spiderAttack",false);
+			anim.SetBool("spiderIdle",true);
 	}
-	else{
-		anim.SetBool("spiderAttack",false);
 	}
 
 }
