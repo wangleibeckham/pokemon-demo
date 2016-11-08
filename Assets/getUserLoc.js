@@ -20,8 +20,7 @@ function Start () {
 	ctrlY = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.y;
 	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
 	anim = GetComponent.<Animator>();
-	// let the object idle
-	anim.SetBool("idle",true);
+
 
 }
 
@@ -36,7 +35,7 @@ function Update () {
 	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
 	tyX = GameObject.Find("Ty").transform.position.x;
 	tyZ = GameObject.Find("Ty").transform.position.z;
-
+	anim.SetBool("idle",false);
 	if(parseInt(ctrlZ)==parseInt(tyZ) && parseInt(ctrlX)==parseInt(tyX) ){
 		Debug.Log("TY");
 		anim.SetBool("approach",true);

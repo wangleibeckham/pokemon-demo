@@ -9,7 +9,7 @@ var anim: Animator;
 
 
 function Start () {
-posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
+	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
 	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
 	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
 	anim = GetComponent.<Animator>();
