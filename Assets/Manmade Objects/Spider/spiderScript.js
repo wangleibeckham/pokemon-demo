@@ -22,7 +22,7 @@ function Start () {
 	anim = GetComponent.<Animator>();
 	spiderX = GameObject.Find("spider").transform.position.x;
 	spiderZ = GameObject.Find("spider").transform.position.z;
-
+//	anim.SetBool("spiderIdle",true);
 
 
 }
@@ -40,10 +40,11 @@ function Update () {
 	spiderZ = GameObject.Find("spider").transform.position.z;
 	anim.SetBool("spiderIdle",true);
 	//Debug.Log(parseInt(posZ)+" : "+parseInt(posX)+"Spider: "+parseInt(spiderZ)+" : "+parseInt(spiderX)+"");
-	if(parseInt(posZ)<=parseInt(spiderZ)+3 && parseInt(posZ)>=parseInt(spiderZ)-3){
+	if(parseInt(posZ)<=parseInt(spiderZ)+2 && parseInt(posZ)>=parseInt(spiderZ)-2){
 		Debug.Log('Z match');
  		if (parseInt(posX)>=23 &&parseInt(posX)<=26){
  			Debug.Log('right X pos');
+ 			anim.SetBool("spiderIdle",false);
 			anim.SetBool("spiderAttack",true);
 		}
 		else{
