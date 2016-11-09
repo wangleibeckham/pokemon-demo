@@ -23,7 +23,8 @@ function Start () {
 	spiderX = GameObject.Find("spider").transform.position.x;
 	spiderZ = GameObject.Find("spider").transform.position.z;
 //	anim.SetBool("spiderIdle",true);
-
+	anim.SetBool("spiderIdle",true);
+	anim.SetBool("spiderDie",false);
 
 }
 
@@ -38,9 +39,10 @@ function Update () {
 	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
 	spiderX = GameObject.Find("spider").transform.position.x;
 	spiderZ = GameObject.Find("spider").transform.position.z;
-	anim.SetBool("spiderIdle",true);
+
+
 	//Debug.Log(parseInt(posZ)+" : "+parseInt(posX)+"Spider: "+parseInt(spiderZ)+" : "+parseInt(spiderX)+"");
-	if(parseInt(posZ)<=parseInt(spiderZ)+2 && parseInt(posZ)>=parseInt(spiderZ)-2){
+	if(parseInt(posZ)<=parseInt(spiderZ)+3 && parseInt(posZ)>=parseInt(spiderZ)-3){
 		Debug.Log('Z match');
  		if (parseInt(posX)>=23 &&parseInt(posX)<=26){
  			Debug.Log('right X pos');
@@ -48,10 +50,18 @@ function Update () {
 			anim.SetBool("spiderAttack",true);
 		}
 		else{
-		Debug.Log('leave battle');
-			anim.SetBool("spiderAttack",false);
-			anim.SetBool("spiderIdle",true);
+			if (!anim.GetBool('spiderDie')){
+				Debug.Log('leave battle');
+				Debug.Log('spider idle: '+anim.GetBool("spiderIdle"));
+		Debug.Log('spider attack: '+anim.GetBool("spiderAttack"));
+		Debug.Log('spider die: '+anim.GetBool("spiderDie"));
+				anim.SetBool("spiderAttack",false);
+				anim.SetBool("spiderIdle",true);
+			}
 	}
 	}
 
+
 }
+
+
