@@ -1,6 +1,6 @@
 ﻿#pragma strict
 var anim: Animator;
-var destroyTime=0.5;
+var destroyTime=1;
 var textMesh: TextMesh;
 
 function Start () {
@@ -34,4 +34,4 @@ function writeStatus(content,pokemon){
 	yield WaitForSeconds(destroyTime);
 	textMesh.text = content;
 	Destroy(pokemon);
-}
+	}
