@@ -13,6 +13,12 @@ var anim: Animator;
 
 function Start () {
 
+	
+	anim = GetComponent.<Animator>();
+
+}
+
+function Update () {
 	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
 	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
 	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
@@ -21,17 +27,17 @@ function Start () {
 	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
 	tyX = GameObject.Find("Ty").transform.position.x;
 	tyZ = GameObject.Find("Ty").transform.position.z;
-	anim = GetComponent.<Animator>();
-
-}
-
-function Update () {
 	//Debug.Log(GameObject.Find("[CameraRig]").transform.Find("Controller (left)").Find("Grip Point").transform.Find("Vive Grip_Grip point"));
 	anim.SetBool("idle",true);
-	if(parseInt(ctrlZ)==parseInt(tyZ) && parseInt(ctrlX)==parseInt(tyX) ){
+	//Debug.Log("Z: "+parseInt(ctrlZ)+":"+parseInt(tyZ)+"X: "+parseInt(ctrlX)+":"+parseInt(tyX));
+	if(parseInt(ctrlZ)==parseInt(tyZ) ){
+		if (parseInt(ctrlX)>=parseInt(tyX)-1&& parseInt(ctrlX)<=parseInt(tyX)+1 ){
 		Debug.Log("TY");
 		anim.SetBool("approach",true);
-	}
+		}
+		else{
+		anim.SetBool("approach",false);
+	}	}
 	else{
 		anim.SetBool("approach",false);
 	}

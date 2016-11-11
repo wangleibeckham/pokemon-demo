@@ -10,11 +10,7 @@ var cameraRig: Transform;
 
 function Start () {
 	cameraRig = GameObject.Find("[CameraRig]").transform;
-	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
-	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
-	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
-	pilotX = GameObject.Find("ArmyPilot").transform.position.x;
-	pilotZ = GameObject.Find("ArmyPilot").transform.position.z;
+
 
 	anim = GetComponent.<Animator>();
 	// set army to turn to user, only look at x, z axis, y axis not included
@@ -23,11 +19,16 @@ function Start () {
 }
 
 function Update () {
+	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
+	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
+	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
+	pilotX = GameObject.Find("ArmyPilot").transform.position.x;
+	pilotZ = GameObject.Find("ArmyPilot").transform.position.z;
 	//Debug.Log(parseInt(pilotX)+" : "+parseInt(pilotZ));
 	anim.SetBool("idle",true);
-	if(parseInt(posX)<=pilotX+3 && parseInt(posX)>=pilotX-3)
+	if(parseInt(posX)<=parseInt(pilotX)+3 && parseInt(posX)>=parseInt(pilotX)-3)
 	{
-		if(parseInt(posZ)<=pilotZ+3 &&parseInt(posZ)>=pilotZ-3){
+		if(parseInt(posZ)<=parseInt(pilotZ)+3 &&parseInt(posZ)>=parseInt(pilotZ)-3){
 			Debug.Log("Fire!");
 			anim.SetBool("idle",false);
 			anim.SetBool("approach",true);
