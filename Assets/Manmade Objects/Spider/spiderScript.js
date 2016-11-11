@@ -33,7 +33,8 @@ function Update () {
 	spiderX = GameObject.Find("spider").transform.position.x;
 	spiderZ = GameObject.Find("spider").transform.position.z;
 	//Debug.Log(parseInt(posZ)+" : "+parseInt(posX)+"Spider: "+parseInt(spiderZ)+" : "+parseInt(spiderX)+"");
-	if(parseInt(posZ)<=parseInt(spiderZ)+3 && parseInt(posZ)>=parseInt(spiderZ)-3){
+
+	if(parseInt(posZ)<=parseInt(spiderZ)+4 && parseInt(posZ)>=parseInt(spiderZ)-4){
 		Debug.Log('Z match');
  		if (parseInt(posX)>=23 &&parseInt(posX)<=26){
  			Debug.Log('right X pos');
@@ -44,8 +45,8 @@ function Update () {
 			if (!anim.GetBool('spiderDie')){
 				Debug.Log('leave battle');
 				Debug.Log('spider idle: '+anim.GetBool("spiderIdle"));
-		Debug.Log('spider attack: '+anim.GetBool("spiderAttack"));
-		Debug.Log('spider die: '+anim.GetBool("spiderDie"));
+		//Debug.Log('spider attack: '+anim.GetBool("spiderAttack"));
+		//Debug.Log('spider die: '+anim.GetBool("spiderDie"));
 				anim.SetBool("spiderAttack",false);
 				anim.SetBool("spiderIdle",true);
 			}

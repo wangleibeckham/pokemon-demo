@@ -35,7 +35,7 @@ function Update () {
 		}
 		else
 		{
-			Debug.Log("Cease Fire!");
+			//Debug.Log("Cease Fire!");
 			anim.SetBool("approach",false);
 			anim.SetBool("idle",true);
 		}
