@@ -23,7 +23,7 @@ function Start () {
 
 function Update () {
 	//Debug.Log(GameObject.Find("[CameraRig]").transform.Find("Controller (left)").Find("Grip Point").transform.Find("Vive Grip_Grip point"));
-//
+////
 	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
 	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
 	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
@@ -32,9 +32,9 @@ function Update () {
 	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
 	spiderX = GameObject.Find("spider").transform.position.x;
 	spiderZ = GameObject.Find("spider").transform.position.z;
-	//Debug.Log(parseInt(posZ)+" : "+parseInt(posX)+"Spider: "+parseInt(spiderZ)+" : "+parseInt(spiderX)+"");
+//	//Debug.Log(parseInt(posZ)+" : "+parseInt(posX)+"Spider: "+parseInt(spiderZ)+" : "+parseInt(spiderX)+"");
 
-	if(parseInt(posZ)<=parseInt(spiderZ)+4 && parseInt(posZ)>=parseInt(spiderZ)-4){
+	if(parseInt(posZ)<=parseInt(spiderZ)+2 && parseInt(posZ)>=parseInt(spiderZ)-5){
 		Debug.Log('Z match');
  		if (parseInt(posX)>=23 &&parseInt(posX)<=26){
  			Debug.Log('right X pos');

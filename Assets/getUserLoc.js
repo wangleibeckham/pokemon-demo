@@ -19,12 +19,12 @@ function Start () {
 }
 
 function Update () {
-	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
-	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
-	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
-	ctrlX = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.x;
-	ctrlY = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.y;
-	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
+//	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
+//	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
+//	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
+//	ctrlX = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.x;
+//	ctrlY = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.y;
+//	ctrlZ = GameObject.Find("[CameraRig]").transform.Find("Controller (left)").transform.position.z;
 	tyX = GameObject.Find("Ty").transform.position.x;
 	tyZ = GameObject.Find("Ty").transform.position.z;
 	//Debug.Log(GameObject.Find("[CameraRig]").transform.Find("Controller (left)").Find("Grip Point").transform.Find("Vive Grip_Grip point"));
