@@ -86,7 +86,8 @@ ModelImporter:
     400076: lion_mesh
     400078: Object001
     4300000: lion_mesh
-    7400000: idle+attack01+attack02+roar+die+eat+Get_Hit+walk01+Run+jump_01
+    7400000: jump
+    7400002: idle
     9500000: //RootNode
     13700000: lion_mesh
   materials:
@@ -109,7 +110,251 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: jump
+      takeName: idle+attack01+attack02+roar+die+eat+Get_Hit+walk01+Run+jump_01
+      firstFrame: 291
+      lastFrame: 311
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRigLLegPlatform
+        weight: 1
+      - path: CATRigLLegPlatform 1
+        weight: 1
+      - path: CATRigPelvis
+        weight: 1
+      - path: CATRigPelvis/CATRigLLeg1
+        weight: 1
+      - path: CATRigPelvis/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigPelvis/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigPelvis/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle/CATRigLLegDigit11
+        weight: 1
+      - path: CATRigPelvis/CATRigRLeg1
+        weight: 1
+      - path: CATRigPelvis/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigPelvis/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigPelvis/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle/CATRigRLegDigit11
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1/CATRigRLeg2 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1/CATRigRLeg2 1/CATRigRLeg3
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1/CATRigRLeg2 1/CATRigRLeg3/CATRigRLegAnkle 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1/CATRigRLeg2 1/CATRigRLeg3/CATRigRLegAnkle 1/CATRigRLegDigit11 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigSpine1
+          1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigSpine1
+          1/CATRigSpine2 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigSpine1
+          1/CATRigSpine2 1/CATRigSpine3 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigSpine1
+          1/CATRigSpine2 1/CATRigSpine3 1/CATRigHub005
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1/CATRigLLeg2 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1/CATRigLLeg2 1/CATRigLLeg3
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1/CATRigLLeg2 1/CATRigLLeg3/CATRigLLegAnkle 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1/CATRigLLeg2 1/CATRigLLeg3/CATRigLLegAnkle 1/CATRigLLegDigit11 1
+        weight: 1
+      - path: CATRigPelvis/CATRigTail1
+        weight: 1
+      - path: CATRigPelvis/CATRigTail1/CATRigTail2
+        weight: 1
+      - path: CATRigPelvis/CATRigTail1/CATRigTail2/CATRigTail3
+        weight: 1
+      - path: CATRigPelvis/CATRigTail1/CATRigTail2/CATRigTail3/CATRigTail4
+        weight: 1
+      - path: CATRigRLegPlatform
+        weight: 1
+      - path: CATRigRLegPlatform 1
+        weight: 1
+      - path: Character001
+        weight: 1
+      - path: lion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: idle+attack01+attack02+roar+die+eat+Get_Hit+walk01+Run+jump_01
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CATRigLLegPlatform
+        weight: 1
+      - path: CATRigLLegPlatform 1
+        weight: 1
+      - path: CATRigPelvis
+        weight: 1
+      - path: CATRigPelvis/CATRigLLeg1
+        weight: 1
+      - path: CATRigPelvis/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigPelvis/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigPelvis/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle/CATRigLLegDigit11
+        weight: 1
+      - path: CATRigPelvis/CATRigRLeg1
+        weight: 1
+      - path: CATRigPelvis/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigPelvis/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigPelvis/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle/CATRigRLegDigit11
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1/CATRigRLeg2 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1/CATRigRLeg2 1/CATRigRLeg3
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1/CATRigRLeg2 1/CATRigRLeg3/CATRigRLegAnkle 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigRLegCollarbone/CATRigRLeg1
+          1/CATRigRLeg2 1/CATRigRLeg3/CATRigRLegAnkle 1/CATRigRLegDigit11 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigSpine1
+          1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigSpine1
+          1/CATRigSpine2 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigSpine1
+          1/CATRigSpine2 1/CATRigSpine3 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/CATRigSpine1
+          1/CATRigSpine2 1/CATRigSpine3 1/CATRigHub005
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1/CATRigLLeg2 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1/CATRigLLeg2 1/CATRigLLeg3
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1/CATRigLLeg2 1/CATRigLLeg3/CATRigLLegAnkle 1
+        weight: 1
+      - path: CATRigPelvis/CATRigSpine1/CATRigSpine2/CATRigSpine3/CATRigchest/Object001/CATRigLLeg1
+          1/CATRigLLeg2 1/CATRigLLeg3/CATRigLLegAnkle 1/CATRigLLegDigit11 1
+        weight: 1
+      - path: CATRigPelvis/CATRigTail1
+        weight: 1
+      - path: CATRigPelvis/CATRigTail1/CATRigTail2
+        weight: 1
+      - path: CATRigPelvis/CATRigTail1/CATRigTail2/CATRigTail3
+        weight: 1
+      - path: CATRigPelvis/CATRigTail1/CATRigTail2/CATRigTail3/CATRigTail4
+        weight: 1
+      - path: CATRigRLegPlatform
+        weight: 1
+      - path: CATRigRLegPlatform 1
+        weight: 1
+      - path: Character001
+        weight: 1
+      - path: lion_mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
