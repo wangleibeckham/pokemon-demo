@@ -14,9 +14,11 @@ function Start () {
 	anim = GetComponent.<Animator>();
 	transform.LookAt(Vector3(cameraRig.position.x,transform.position.y,cameraRig.position.z));
 
+
 }
 
 function FixedUpdate () {
+	
 	transform.LookAt(Vector3(cameraRig.position.x,transform.position.y,cameraRig.position.z));
-	transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("[CameraRig]").transform.position, 0.05);
+	transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("[CameraRig]").transform.position, 0.02);
 }

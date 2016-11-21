@@ -34,7 +34,7 @@ function Update () {
 	spiderZ = GameObject.Find("spider").transform.position.z;
 //	//Debug.Log(parseInt(posZ)+" : "+parseInt(posX)+"Spider: "+parseInt(spiderZ)+" : "+parseInt(spiderX)+"");
 
-	if(parseInt(posZ)<=parseInt(spiderZ)+2 && parseInt(posZ)>=parseInt(spiderZ)-5){
+	if(parseInt(posZ)<=parseInt(spiderZ)+2 && parseInt(posZ)>=parseInt(spiderZ)-3){
 		Debug.Log('Z match');
  		if (parseInt(posX)>=23 &&parseInt(posX)<=26){
  			Debug.Log('right X pos');
