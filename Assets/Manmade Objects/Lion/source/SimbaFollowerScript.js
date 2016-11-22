@@ -1,6 +1,5 @@
 ﻿#pragma strict
 
-
 var anim: Animator;
 var posX:float;
 var posY:float;
@@ -13,12 +12,26 @@ function Start () {
 	cameraRig = GameObject.Find("[CameraRig]").transform;
 	anim = GetComponent.<Animator>();
 	transform.LookAt(Vector3(cameraRig.position.x,transform.position.y,cameraRig.position.z));
-
+		anim.SetBool("doRun",false);
+		anim.SetBool("doIdle",true);
 
 }
 
 function FixedUpdate () {
-	
-	transform.LookAt(Vector3(cameraRig.position.x,transform.position.y,cameraRig.position.z));
-	transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("[CameraRig]").transform.position, 0.02);
+	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
+	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
+	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
+
+	if (parseInt(posX)==parseInt(transform.position.x) && parseInt(posZ)==parseInt(transform.position.z))
+	{
+		anim.SetBool("doRun",false);
+		anim.SetBool("doIdle",true);
+	}
+	else
+	{
+		anim.SetBool("doIdle",false);
+		anim.SetBool("doRun",true);
+		transform.LookAt(Vector3(cameraRig.position.x,transform.position.y,cameraRig.position.z));
+		transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("[CameraRig]").transform.position, 0.02);
+	}
 }
