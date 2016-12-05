@@ -9,7 +9,7 @@ var anim: Animator;
 var cameraRig: Transform;
 
 function Start () {
-	cameraRig = GameObject.Find("[CameraRig]").transform;
+	cameraRig = GameObject.Find("[CameraRig]").transform.Find("locator").transform;
 
 
 	anim = GetComponent.<Animator>();
