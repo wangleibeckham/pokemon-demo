@@ -15,7 +15,7 @@ function Start () {
 
 function Update () {
 	// if the iphone is dropped, use -2 as hardcoded location indicator, should use relative gameObject.transform.position location instead
-	if (gameObject.transform.position.y<-5 && !performed)
+	if (gameObject.transform.position.y<-3 && !performed)
 	{
 		Debug.Log("Transport To Secret Location");
 		cameraRig.position = secretLoc;

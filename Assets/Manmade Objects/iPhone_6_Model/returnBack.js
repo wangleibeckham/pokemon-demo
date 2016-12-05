@@ -22,5 +22,10 @@ function Update () {
 		cameraRig.rotation = Quaternion.AngleAxis(90, Vector3.up);
 		performed= true;
 	}
-
+	if(cameraRig.transform.position == secretLoc)
+	{
+	gameObject.transform.position = originalPos;
+	performed=false;
+	Debug.Log("Transporter Resotred");
+	}
 }
