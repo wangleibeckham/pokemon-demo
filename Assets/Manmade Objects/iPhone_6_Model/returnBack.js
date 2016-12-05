@@ -2,9 +2,11 @@
 
 var cameraRig: Transform;
 var secretLoc: Vector3;
+var originalPos: Vector3;
 var performed: boolean;
 
 function Start () {
+	originalPos  = gameObject.transform.position;
 	cameraRig = GameObject.Find("[CameraRig]").transform;
 	secretLoc = Vector3(3.94, 0, 4.93);
 	performed = false;
