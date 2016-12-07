@@ -22,10 +22,13 @@ function FixedUpdate () {
 	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
 	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
 
-	if (parseInt(posX)==parseInt(transform.position.x) && parseInt(posZ)==parseInt(transform.position.z))
+	if (parseInt(posX)<=parseInt(transform.position.x)+1 && parseInt(posX)>=parseInt(transform.position.x)-1)
 	{
+		if (parseInt(posZ)<=parseInt(transform.position.z)+1 && parseInt(posZ)>=parseInt(transform.position.z)-1)
+		{
 		anim.SetBool("doRun",false);
 		anim.SetBool("doIdle",true);
+		}
 	}
 	else
 	{

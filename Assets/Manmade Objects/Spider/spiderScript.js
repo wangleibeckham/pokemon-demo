@@ -32,7 +32,7 @@ function FixedUpdate () {
 	spiderZ = GameObject.Find("spider").transform.position.z;
 
 
-	if(parseInt(posZ)<=parseInt(spiderZ) && parseInt(posZ)>=parseInt(spiderZ)-2)
+	if(parseInt(posZ)<=parseInt(spiderZ) && parseInt(posZ)>=parseInt(spiderZ)-4)
 	{
  		if (parseInt(posX)>=parseInt(spiderX)-1 &&parseInt(posX)<=parseInt(spiderX)+1)
  		{

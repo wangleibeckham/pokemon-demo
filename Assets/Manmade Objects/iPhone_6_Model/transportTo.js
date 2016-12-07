@@ -9,7 +9,7 @@ var performed: boolean;
 function Start () {
 	originalPos  = gameObject.transform.position;
 	cameraRig = GameObject.Find("[CameraRig]").transform;
-	secretLoc = Vector3(-994, 998, 1001);
+	secretLoc = Vector3(-994, 999, 1001);
 	performed = false;
 }
 

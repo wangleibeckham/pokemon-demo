@@ -18,6 +18,7 @@ function OnCollisionEnter(collision: Collision) {
 		Debug.Log('spider hit! '+anim);
 		anim.SetBool("spiderIdle",false);
 		anim.SetBool("spiderAttack",false);
+		anim.SetBool("spiderRun",false);
 		anim.SetBool("spiderDie",true);
 		//Debug.Log('spider idle: '+anim.GetBool("spiderIdle"));
 		//Debug.Log('spider attack: '+anim.GetBool("spiderAttack"));
