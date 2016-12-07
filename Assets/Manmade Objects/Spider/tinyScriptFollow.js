@@ -4,6 +4,7 @@ var anim: Animator;
 var posX:float;
 var posY:float;
 var posZ:float;
+var spiderDied:boolean;
 //var speed=20f;
 var cameraRig: Transform;
 var originalLoc: Vector3;
@@ -25,32 +26,35 @@ function Start () {
 }
 
 function FixedUpdate () {
-
+	
 	posX = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.x;
 	posY = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.y;
 	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
-
-	if (parseInt(posX)>=12)
+	if (!anim.GetBool("spiderDie"))
 	{
-	transform.LookAt(Vector3(cameraRig.position.x,transform.position.y,cameraRig.position.z));
-	anim.SetBool("spiderIdle",false);
-	anim.SetBool("spiderRun",true);
-	doSwarm();
-	}
-	else
-	{
-	if (parseInt(transform.position.x)!=parseInt(originalLoc.x) && parseInt(transform.position.z)!=parseInt(originalLoc.z)){
-	transform.LookAt(Vector3(originalLoc.x,transform.position.y,originalLoc.z));
-	anim.SetBool("spiderIdle",false);
-	anim.SetBool("spiderRun",true);
-	doRetreat();
-	}
-	else{
-	anim.SetBool("spiderIdle",true);
-	anim.SetBool("spiderRun",false);
+		if (parseInt(posX)>=12)
+		{
+		transform.LookAt(Vector3(cameraRig.position.x,transform.position.y,cameraRig.position.z));
+		anim.SetBool("spiderIdle",false);
+		anim.SetBool("spiderRun",true);
+		doSwarm();
+		}
+		else
+		{
+			if (parseInt(transform.position.x)!=parseInt(originalLoc.x) && parseInt(transform.position.z)!=parseInt(originalLoc.z)){
+			transform.LookAt(Vector3(originalLoc.x,transform.position.y,originalLoc.z));
+			anim.SetBool("spiderIdle",false);
+			anim.SetBool("spiderRun",true);
+			doRetreat();
+			}
+			else{
+			anim.SetBool("spiderIdle",true);
+			anim.SetBool("spiderRun",false);
 
+			}
+		}
 	}
-	}
+
 }
 
 function doSwarm(){

@@ -32,11 +32,12 @@ function FixedUpdate () {
 	spiderZ = GameObject.Find("spider").transform.position.z;
 
 
-	if(parseInt(posZ)<=parseInt(spiderZ) && parseInt(posZ)>=parseInt(spiderZ)-4)
+	if(parseInt(posZ)<=parseInt(spiderZ)+5 && parseInt(posZ)>=parseInt(spiderZ)-5)
 	{
- 		if (parseInt(posX)>=parseInt(spiderX)-1 &&parseInt(posX)<=parseInt(spiderX)+1)
+ 		if (parseInt(posX)>=parseInt(spiderX)-5 &&parseInt(posX)<=parseInt(spiderX)+5)
  		{
  			Debug.Log('Spider Attack!');
+ 			transform.LookAt(Vector3(GameObject.Find("[CameraRig]").transform.position.x,transform.position.y,GameObject.Find("[CameraRig]").transform.position.z));
  			anim.SetBool("spiderIdle",false);
 			anim.SetBool("spiderAttack",true);
 		}
