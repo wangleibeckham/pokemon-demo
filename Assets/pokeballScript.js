@@ -17,6 +17,8 @@ function OnCollisionEnter(collision: Collision) {
 	if (collision.gameObject.tag=='spider'){
 		smoke.transform.position=gameObject.transform.position;
 		anim=collision.gameObject.GetComponent.<Animator>();
+		// shrink size to 70%, go underground is not suggested.
+		collision.gameObject.transform.localScale -= new Vector3(0.3F, 0.3F, 0.3F);
 		Debug.Log('spider hit! '+anim);
 		anim.SetBool("spiderIdle",false);
 		anim.SetBool("spiderAttack",false);
@@ -30,12 +32,12 @@ function OnCollisionEnter(collision: Collision) {
 	//else if (collision.gameObject.name=='Ty'){
 	//	animTY.SetBool("dodge",true);
 	//}
-	else if(collision.gameObject.tag=='pokemon'){
-		smoke.transform.position=gameObject.transform.position;
-		GameObject.Find("smokeHolder").Find("WhiteSmoke").active=true;
-		//Debug.Log('captured '+ collision.gameObject.name);
-		StartCoroutine (writeStatus('Wow! You captured '+collision.gameObject.name,collision.gameObject,gameObject,1));
-	}
+//	else if(collision.gameObject.tag=='pokemon'){
+//		smoke.transform.position=gameObject.transform.position;
+//		GameObject.Find("smokeHolder").Find("WhiteSmoke").active=true;
+//		//Debug.Log('captured '+ collision.gameObject.name);
+//		StartCoroutine (writeStatus('Wow! You captured '+collision.gameObject.name,collision.gameObject,gameObject,1));
+//	}
 }
 
 function writeStatus(content,pokemon,pokeball,destroyTime){

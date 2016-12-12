@@ -18,7 +18,6 @@ function Start () {
 
 	
 	anim = GetComponent.<Animator>();
-
 }
 
 function Update () {
