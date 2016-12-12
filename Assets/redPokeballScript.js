@@ -41,7 +41,7 @@ function OnCollisionEnter(collision: Collision) {
 function writeStatus(content,pokemon,pokeball,destroyTime){
 	yield WaitForSeconds(destroyTime);
 	textMesh.text = content;
-	// Destroy(pokemon);
+	Destroy(pokemon);
 	Destroy(pokeball);
 
 	}
