@@ -5,7 +5,7 @@ var textMesh: TextMesh;
 var smoke:GameObject;
 function Start () {
 	textMesh =GameObject.Find("Text").GetComponent.<TextMesh>();
-	smoke=GameObject.Find("smokeHolder");
+	smoke=GameObject.Find("smokeHolder").Find("WhiteSmoke");
 }
 
 function Update () {
@@ -15,10 +15,11 @@ function OnCollisionEnter(collision: Collision) {
 	
 	//Debug.Log("collide with: "+collision.gameObject.name);
 	if (collision.gameObject.tag=='spider'){
+		smoke.active=true;
 		smoke.transform.position=gameObject.transform.position;
+		//GameObject.Find("smokeHolder").Find("WhiteSmoke").active=true;
 		anim=collision.gameObject.GetComponent.<Animator>();
-		// shrink size to 70%, go underground is not suggested.
-		collision.gameObject.transform.localScale -= new Vector3(0.3F, 0.3F, 0.3F);
+
 		Debug.Log('spider hit! '+anim);
 		anim.SetBool("spiderIdle",false);
 		anim.SetBool("spiderAttack",false);
@@ -27,7 +28,7 @@ function OnCollisionEnter(collision: Collision) {
 		//Debug.Log('spider idle: '+anim.GetBool("spiderIdle"));
 		//Debug.Log('spider attack: '+anim.GetBool("spiderAttack"));
 		//Debug.Log('spider die: '+anim.GetBool("spiderDie"));
-		StartCoroutine(writeStatus('You killed the demon spider!',collision.gameObject,gameObject,3));
+		StartCoroutine(writeStatus('You killed the demon spider!',collision.gameObject,gameObject,smoke,4));
 	}
 	//else if (collision.gameObject.name=='Ty'){
 	//	animTY.SetBool("dodge",true);
@@ -40,9 +41,10 @@ function OnCollisionEnter(collision: Collision) {
 //	}
 }
 
-function writeStatus(content,pokemon,pokeball,destroyTime){
+function writeStatus(content,pokemon:GameObject,pokeball:GameObject,smoke:GameObject,destroyTime){
 	yield WaitForSeconds(destroyTime);
 	textMesh.text = content;
+	smoke.active=false;
 	// Destroy(pokemon);
 	Destroy(pokeball);
 

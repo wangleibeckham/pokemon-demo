@@ -34,10 +34,9 @@ function FixedUpdate () {
 
 	if(parseInt(posZ)<=parseInt(spiderZ)+6 && parseInt(posZ)>=parseInt(spiderZ)-6)
 	{
- 		if (parseInt(posX)>=parseInt(spiderX)-6 && parseInt(posX)<=parseInt(spiderX)+6)
+ 		if (parseInt(posX)>=parseInt(spiderX)-4 && parseInt(posX)<=parseInt(spiderX)+4)
  		{
  			Debug.Log('Spider Attack!');
- 			transform.LookAt(Vector3(GameObject.Find("[CameraRig]").transform.position.x,transform.position.y,GameObject.Find("[CameraRig]").transform.position.z));
  			anim.SetBool("spiderIdle",false);
 			anim.SetBool("spiderAttack",true);
 		}

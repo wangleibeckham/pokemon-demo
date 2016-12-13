@@ -5,7 +5,7 @@ var textMesh: TextMesh;
 var smoke:GameObject;
 function Start () {
 	textMesh =GameObject.Find("Text").GetComponent.<TextMesh>();
-	smoke=GameObject.Find("smokeHolder");
+	smoke=GameObject.Find("smokeHolder").Find("WhiteSmoke");
 }
 
 function Update () {
@@ -31,16 +31,18 @@ function OnCollisionEnter(collision: Collision) {
 //	//	animTY.SetBool("dodge",true);
 //	//}
 	if(collision.gameObject.tag=='pokemon'){
+		smoke.active=true;
 		smoke.transform.position=gameObject.transform.position;
-		GameObject.Find("smokeHolder").Find("WhiteSmoke").active=true;
+		//GameObject.Find("smokeHolder").Find("WhiteSmoke").active=true;
 		//Debug.Log('captured '+ collision.gameObject.name);
-		StartCoroutine (writeStatus('Wow! You captured '+collision.gameObject.name,collision.gameObject,gameObject,2));
+		StartCoroutine (writeStatus('Wow! You captured '+collision.gameObject.name,collision.gameObject,gameObject,smoke,3));
 	}
 }
 
-function writeStatus(content,pokemon,pokeball,destroyTime){
+function writeStatus(content,pokemon:GameObject,pokeball:GameObject,smoke:GameObject,destroyTime){
 	yield WaitForSeconds(destroyTime);
 	textMesh.text = content;
+	smoke.active=false;
 	Destroy(pokemon);
 	Destroy(pokeball);
 

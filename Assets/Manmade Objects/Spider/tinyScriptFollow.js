@@ -17,7 +17,7 @@ function Start () {
 	var z = transform.position.z;
 	// store original position
 	originalLoc = Vector3(x,y,z);
-
+	spiderDied=false;
 	anim.SetBool("spiderIdle",true);
 	transform.LookAt(Vector3(cameraRig.position.x,transform.position.y,cameraRig.position.z));
 	// set army to turn to user, only look at x, z axis, y axis not included
@@ -54,7 +54,11 @@ function FixedUpdate () {
 			}
 		}
 	}
-
+	else if (anim.GetBool("spiderDie")&&!spiderDied)
+	{
+	spiderDied=true;
+	//gameObject.transform.localScale -= new Vector3(0.6F, 0.6F, 0.6F);
+	}
 }
 
 function doSwarm(){
