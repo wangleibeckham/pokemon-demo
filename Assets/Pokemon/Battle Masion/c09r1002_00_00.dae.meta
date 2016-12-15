@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: f2ae4b59819338c4ba231f60048d2100
+timeCreated: 1481820354
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: vsn_mesh_0_polySurface917
+    100004: vsn_mesh_1_polySurface917
+    100006: vsn_mesh_2_polySurface917
+    100008: vsn_mesh_3_polySurface917
+    100010: vsn_mesh_4_polySurface917
+    100012: vsn_mesh_5_polySurface917
+    100014: vsn_mesh_6_polySurface917
+    100016: vsn_mesh_7_polySurface917
+    100018: vsn_mesh_8_polySurface917
+    100020: vsn_mesh_9_polySurface917
+    400000: //RootNode
+    400002: vsn_mesh_0_polySurface917
+    400004: vsn_mesh_1_polySurface917
+    400006: vsn_mesh_2_polySurface917
+    400008: vsn_mesh_3_polySurface917
+    400010: vsn_mesh_4_polySurface917
+    400012: vsn_mesh_5_polySurface917
+    400014: vsn_mesh_6_polySurface917
+    400016: vsn_mesh_7_polySurface917
+    400018: vsn_mesh_8_polySurface917
+    400020: vsn_mesh_9_polySurface917
+    2300000: vsn_mesh_0_polySurface917
+    2300002: vsn_mesh_1_polySurface917
+    2300004: vsn_mesh_2_polySurface917
+    2300006: vsn_mesh_3_polySurface917
+    2300008: vsn_mesh_4_polySurface917
+    2300010: vsn_mesh_5_polySurface917
+    2300012: vsn_mesh_6_polySurface917
+    2300014: vsn_mesh_7_polySurface917
+    2300016: vsn_mesh_8_polySurface917
+    2300018: vsn_mesh_9_polySurface917
+    3300000: vsn_mesh_0_polySurface917
+    3300002: vsn_mesh_1_polySurface917
+    3300004: vsn_mesh_2_polySurface917
+    3300006: vsn_mesh_3_polySurface917
+    3300008: vsn_mesh_4_polySurface917
+    3300010: vsn_mesh_5_polySurface917
+    3300012: vsn_mesh_6_polySurface917
+    3300014: vsn_mesh_7_polySurface917
+    3300016: vsn_mesh_8_polySurface917
+    3300018: vsn_mesh_9_polySurface917
+    4300000: vsn_mesh_0_polySurface917
+    4300002: vsn_mesh_1_polySurface917
+    4300004: vsn_mesh_2_polySurface917
+    4300006: vsn_mesh_3_polySurface917
+    4300008: vsn_mesh_4_polySurface917
+    4300010: vsn_mesh_5_polySurface917
+    4300012: vsn_mesh_6_polySurface917
+    4300014: vsn_mesh_7_polySurface917
+    4300016: vsn_mesh_8_polySurface917
+    4300018: vsn_mesh_9_polySurface917
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

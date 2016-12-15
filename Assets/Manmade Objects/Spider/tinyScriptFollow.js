@@ -32,7 +32,7 @@ function FixedUpdate () {
 	posZ = GameObject.Find("[CameraRig]").transform.Find("Camera (eye)").transform.position.z;
 	if (!anim.GetBool("spiderDie"))
 	{
-		if (parseInt(posX)>=12)
+		if (parseInt(posX)>=12 && parseInt(posX)<=200 )
 		{
 		transform.LookAt(Vector3(cameraRig.position.x,transform.position.y,cameraRig.position.z));
 		anim.SetBool("spiderIdle",false);

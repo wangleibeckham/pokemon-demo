@@ -3,9 +3,13 @@ var anim: Animator;
 var animTY: Animator;
 var textMesh: TextMesh;
 var smoke:GameObject;
+var arenaLoc: Vector3;
+
 function Start () {
 	textMesh =GameObject.Find("Text").GetComponent.<TextMesh>();
 	smoke=GameObject.Find("smokeHolder").Find("WhiteSmoke");
+
+	arenaLoc = Vector3((Mathf.PingPong(0,6)+2996), 10, 2000);
 }
 
 function Update () {
@@ -43,7 +47,7 @@ function writeStatus(content,pokemon:GameObject,pokeball:GameObject,smoke:GameOb
 	yield WaitForSeconds(destroyTime);
 	textMesh.text = content;
 	smoke.active=false;
-	Destroy(pokemon);
+	pokemon.transform.position = arenaLoc;
 	Destroy(pokeball);
 
 	}
